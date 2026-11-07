@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>モンスターじゃんけん</title>
+  <link rel="stylesheet" href="./css/janken.css">
+</head>
+<body>
+
+  <div class="game-card">
+    <h1>🌱 モンスターじゃんけんバトル 🌱</h1>
+
+    <div class="monster-container">
+      <!-- モンスター画像（大きめに表示） -->
+      <img id="monster-image" class="monster-img" src="" alt="モンスター">
+    </div>
+
+    <div class="message-box">
+      <p id="pc-hand" style="margin:5px 0; color:#555;">野生のモンスターがあらわれた！</p>
+      <p id="judgment" style="margin:5px 0;">手をえらんで!</p>
+    </div>
+
+    <div id="janken-buttons" class="btn-group">
+      <button class="janken-btn" onclick="playJanken(0)">✊ グー</button>
+      <button class="janken-btn" onclick="playJanken(1)">✌️ チョキ</button>
+      <button class="janken-btn" onclick="playJanken(2)">🖐️ パー</button>
+    </div>
+
+    <div id="catch-stage">
+      <p id="catch-msg" style="margin:0 0 8px 0; color:#b05d00; font-weight:bold;">✨ ゲットチャンス！</p>
+      <button class="catch-btn" onclick="tryCatch()">仲間にする！</button>
+    </div>
+
+    <div id="catch-area">
+      <h3>仲間になったモンスター</h3>
+      <div id="party-list" class="party-list"></div>
+    </div>
+  </div>
+
+  <script src="js/janken.js"></script>
+</body>
+</html>

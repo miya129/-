@@ -1,0 +1,138 @@
+
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      /* 草むらみたいな緑色の背景に変更 */
+      background: linear-gradient(135deg, #2d6a4f, #52b788);
+      color: #333333;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* ゲームの枠を大きく、真ん中に配置するやつ */
+    .game-card {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #1b4332;
+    }
+
+    /* モンスターの画像を大きく表示する*/
+    .monster-container {
+      background-color: #e9f5ed;
+      border: 3px solid #b7e4c7;
+      border-radius: 16px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    .monster-img {
+      width: 220px;
+      height: 220px;
+      object-fit: contain;
+    }
+
+    .message-box {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 15px 0;
+      min-height: 50px;
+    }
+
+    #judgment {
+      color: #d90429;
+      font-size: 20px;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .janken-btn {
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      background-color: #2d6a4f;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 0 #1b4332;
+      transition: transform 0.1s;
+    }
+
+    /* ボタンを押したときに沈むアニメーション */
+    .janken-btn:active {
+      transform: translateY(4px);
+      box-shadow: none;
+    }
+
+    /* 捕獲エリアのデザイン */
+    #catch-stage {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #fff3cd;
+      border: 2px dashed #ffc107;
+      border-radius: 12px;
+    }
+
+    .catch-btn {
+      margin-top: 10px;
+      padding: 10px 25px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #f77f00;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    #catch-area {
+      margin-top: 25px;
+      border-top: 2px solid #eee;
+      padding-top: 15px;
+      text-align: left;
+    }
+
+    #catch-area h3 {
+      font-size: 15px;
+      color: #666;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .party-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .party-img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      background: #f8f9fa;
+      border-radius: 8px;
+      border: 2px solid #b7e4c7;
+      padding: 4px;
+    }
